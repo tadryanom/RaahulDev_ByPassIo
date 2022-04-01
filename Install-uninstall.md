@@ -4,7 +4,7 @@
 - Right click on inf file and select the Install option, an operting system prompt will appear and ask you for reboot.
 - After rebooting the system. you can use devcon tool and check the driver stack of installed device class.
 - Use the following command to check the device stack (of any class).
-  devocn stack =DiskDrive
+- devocn stack =DiskDrive
 
 ## UnInstallation:
 
