@@ -2,20 +2,20 @@
 
 #Steps:
 - Right click on inf file and select the Install option, an operting system prompt will appear and ask you for reboot.
-- Once you reboot the system. use devcon and check the driver installed successfully.
-- Use this cmd in devcon to know the DiskDrive stack.
-	devocn stack =DiskDrive
+- After rebooting the system. you can use devcon tool and check the driver stack of installed device class.
+- Use the following command to check the device stack (of any class).
+  devocn stack =DiskDrive
 
 ## UnInstallation:
 
 #Steps:
-- Open regedit in elevated mode.
+- Open registry in Administartor mode.
 - Goto "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}".
-- Check in LowerFilters Key you may see BypassFilter entry along with EhStorClass.
-- Double click on LowerFilters Key and manually simply delet the entry of BypassFilter.
-- Goto drivers and delete the driver filter of Bypassfilter.
-- Reboot the system and again run the above devcon command.
-- You should not be able to see the ByPassFilter in the diskdrivbe stack.
+- Check in LowerFilters Key you may see "DriverName" in our case it's BypassFilter, entry along with EhStorClass, if present.
+- Double click on LowerFilters Key and manually delete the entry of DriverName.
+- Goto drivers directory and delete the driver's sys file.
+- Reboot the system and again run the  devcon command.
+- You woult not be able to see the ByPassFilter in the diskdrivbe stack.
 
 # NOTE:
 - Devcon you can find in Winddk Samples provided by Microsoft.
