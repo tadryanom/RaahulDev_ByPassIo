@@ -1,14 +1,14 @@
-# Installation:
+## Installation:
 
-Steps:
+#Steps:
 1-Right click on inf file and select the Install option, the driver will install and ask operting system prompt you for reboot.
 2-Once you reboot the system. use devcon and check the driver installed successfully.
 3-Use this cmd in devcon to know the DiskDrive stack.
 	devocn stack =DiskDrive
 
-# UnInstallation:
+## UnInstallation:
 
-Steps:
+#Steps:
 1-Open regedit in elevated mode.
 2-Goto "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}".
 3-Check in LowerFilters Key you may see BypassFilter entry along with EhStorClass.
