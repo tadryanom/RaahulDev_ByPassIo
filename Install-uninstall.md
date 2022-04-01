@@ -1,7 +1,7 @@
 ## Installation:
 
 #Steps:
-- Right click on inf file and select the Install option, the driver will install and ask operting system prompt you for reboot.
+- Right click on inf file and select the Install option, an operting system prompt will appear and ask you for reboot.
 - Once you reboot the system. use devcon and check the driver installed successfully.
 - Use this cmd in devcon to know the DiskDrive stack.
 	devocn stack =DiskDrive
@@ -17,3 +17,5 @@
 - Reboot the system and again run the above devcon command.
 - You should not be able to see the ByPassFilter in the diskdrivbe stack.
 
+# NOTE:
+- Devcon you can find in Winddk Samples provided by Microsoft.
